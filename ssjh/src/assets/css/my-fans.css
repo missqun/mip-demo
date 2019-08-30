@@ -1,0 +1,238 @@
+/*主页header的样式*/
+.body{
+    height:1300px;
+}
+.top_box{
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+}
+.top_img{
+    margin-top:16px;
+}
+.menu_item{
+    width:80px;
+    font-size:18px;
+    text-align: center;
+    color: #333333;
+    line-height: 80px;
+    margin-right:49px;
+    box-sizing: border-box;
+    border-bottom:2px solid transparent;
+}
+.menu_item:hover,.menu_item.active{
+    border-bottom:2px solid #1e88e5;
+    color:#1e88e5;
+    font-weight:bold;
+}
+.user,.score{
+    line-height:80px;
+    font-size:16px; 
+    margin-left:20px; 
+}
+.user_list{
+    width: 136px;
+	height: 113px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 6px 0px 
+		rgba(51, 51, 51, 0.2);
+    border-radius: 4px;
+    z-index:20;
+    position: absolute;
+    top:65px;
+    left:80%;
+    padding:6px 14px;
+    box-sizing: border-box;
+
+}
+.ul_item{
+    height:28px;
+	font-size: 16px;
+	line-height: 28px;
+    color: #666666;
+    padding-left:22px;
+    box-sizing: border-box;
+    text-align: center;
+    margin:4px 0;
+}
+.my_info{
+    background:url(../images/my_info.png) 3px center no-repeat;
+}
+.my_info:hover,.my_info.active{
+    color:#1e88e5;
+    background:url(../images/bmy_info.png) 3px center no-repeat;
+}
+.my_fans{
+    background:url(../images/my_fans.png) 3px center no-repeat;
+}
+.my_fans:hover,.my_fans.active{
+    color:#1e88e5;
+    background:url(../images/bmy_fans.png) 3px center no-repeat;
+}
+.my_logout{
+    background:url(../images/my_logout.png) 3px center no-repeat;
+}
+.my_logout:hover,.my_logout.active{
+    color:#1e88e5;
+    background:url(../images/bmy_logout.png) 3px center no-repeat;
+}
+.score{
+    padding-left:19px;
+    background:url(../images/top_jb.png) 0px center no-repeat; 
+}
+.score_list{
+    width: 136px;
+	height: 113px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 6px 0px 
+		rgba(51, 51, 51, 0.2);
+    border-radius: 4px;
+    z-index:20;
+    position: absolute;
+    top:65px;
+    right:0;
+    padding:6px 14px;
+    box-sizing: border-box;
+}
+.my_score{
+    background:url(../images/my_score.png) 3px center no-repeat;
+}
+.my_score:hover,.my_score.active{
+    color:#1e88e5;
+    background:url(../images/bmy_score.png) 3px center no-repeat;
+}
+.my_add_score{
+    background:url(../images/my_add_score.png) 3px center no-repeat;
+}
+.my_add_score:hover,.my_add_score.active{
+    color:#1e88e5;
+    background:url(../images/bmy_add_score.png) 3px center no-repeat;
+}
+.my_score_shop{
+    background:url(../images/my_score_shop.png) 3px center no-repeat;
+}
+.my_score_shop:hover,.my_score_shop.active{
+    color:#1e88e5;
+    background:url(../images/bmy_score_shop.png) 3px center no-repeat;
+}
+.username,.userscore{
+    margin:0 15px;
+}
+.userscore{
+    color: #fb8c00;
+}
+.user_list_down,.user_list_up,.score_list_down,.score_list_up{
+    color: #999999;
+}
+
+/*面板信息main的样式*/
+
+#main{
+    width:100%;
+    height:1000px;
+    margin:1px auto;  
+    position: relative;
+    background: #f6f6f6;
+}
+/*user_header_logo的样式*/
+.user_header_logo{
+    width: 1920px;
+	height: 180px;
+    background:url(../images/profile_bg.png) left top no-repeat;
+	box-shadow: 3px 5px 6px 0px 
+		rgba(204, 204, 204, 0.2);
+    
+}
+.user_header_logo:before{
+    content:"";
+    display:table;
+}
+.user_logo{
+    width:1200px;
+    margin:42px auto;
+    color: #ffffff;
+}
+.avatar{
+    width:96px;
+    margin-right:13px;
+}
+.name{
+	font-size: 24px;
+	line-height: 50px;
+}
+.id{
+    font-size: 16px;
+	line-height: 46px;
+}
+.fans_img{
+    width:31px;
+    position: relative;
+    top:-3px;
+    margin-right:5px;
+}
+.fans_title{
+    width:1200px;
+    height:46px;
+    margin:32px auto 0px auto;
+	font-size: 18px;	
+	line-height:30px;
+	color: #333333;
+}
+.fans_box{
+    width: 1200px;
+	height: 796px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 8px 0px 
+        rgba(183, 183, 183, 0.35);
+    margin:0 auto;
+    padding:0px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+/*清楚外边距溢出*/
+.fans_box:before{
+   content:'';
+   display:table;
+}
+.fans_box:after{
+    content:'';
+    display:table;
+ }
+.fans_item{
+    width: 1118px;
+    height: 87px;
+    border-bottom:1px solid #e9e9e9;
+    line-height:87px;
+    margin:25px 0;
+}
+.fans_avatar{
+    width:54px;
+    margin-right:13px;
+}
+.fans_name{
+	height: 24px;
+	font-size: 18px;
+	line-height: 24px;
+}
+.fans_msg{
+	height: 19px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #666666;
+}
+.to_add_fans{
+    width: 106px;
+	height: 38px;
+	background-color: #039be5;
+    border-radius: 4px;
+    line-height:38px;
+    color:#fff;
+    text-align: center;
+    margin:auto 0;
+}
+#fans_pages{
+    position: absolute;
+    bottom:80px;
+    left:426px;
+    width:400px;
+}

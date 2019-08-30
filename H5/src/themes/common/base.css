@@ -1,0 +1,111 @@
+/*
+* 基础
+*/
+
+/* 样式初始化 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float:right;
+}
+.flex{
+  display: flex;
+}
+.clearfix:after { 
+  content:"\200B"; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  } 
+ .clearfix {
+  *zoom:1;
+  }	
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-align: center;
+}
+
+textarea, input{
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.personal_bg textarea,input{
+  color:#999;
+ font-family:Source Han Sans CN;
+}
+a {
+  display: inline-block;
+  line-height: inherit;
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  &:visited{
+    color:#777;
+  }
+  &:link, &:hover{
+
+  }
+  &:active{
+    color: rgba(3,155,229,1);
+  }
+  img {
+    border: 0;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track-piece
+{
+  background-color: #ebeef3;
+  -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+  height: 32px;
+  background-color: #d8dce4;
+  -webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+  width: 32px;
+  background-color: #d8dce4;
+  -webkit-border-radius: 4px;
+}
+/* 覆盖vux的样式 */
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
+  color:rgba(3,155,229,1) !important;
+}
+.weui-tabbar__label{
+  color:#777 !important;
+}
+.weui-search-bar__label{
+  border-radius: 2rem;
+}
+.vux-actionsheet-menu-default{
+  color：:rgba(3,155,229,1) !important;
+}

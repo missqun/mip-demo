@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>WEB DEMO</title>
+    <link rel="stylesheet" href="dist/css/theme.css">
+    <style>
+        .g-window .m-main, .g-window .m-album, .g-window .m-article, .g-window .m-room{
+          margin-top:3.6rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="g-window">
+      <div class="login_top flex">
+          <div class="login_back">
+            <a href="" class="flex">
+              <img src="res/images/top_back.png" alt="">
+            </a>
+          </div>
+          <div class="login_title">欢迎登录</div>
+          <div class="get_back">
+             <a href="">找回密码</a> 
+          </div>          
+      </div>
+      <div class="g-inherit m-album">
+        <div id="form-data" class="g-center m-login" style="display:none">
+          <div class="cells">
+            <img class="logo" src="res/im/logo.png">
+          </div>
+          <div class="cells toggle_login flex">
+              <div class="acount_login " :class="{'active':isActive}" @click="toggleClass()">账号登录</div>
+              <div class="phone_login" :class="{'active':!isActive}" @click="toggleClass()">短信登陆</div>
+          </div>
+          <table></table>
+          <div class="cells login_box" v-show="isActive">
+            <div class="cell">
+              <span class="icon icon-account"></span>
+              <input type="text" class="ipt ipt-account" maxlength="20" v-model="account" placeholder="手机号/ID/用户名"/>
+            </div>
+            <div class="cell">
+              <span class="icon icon-pwd"></span>
+              <input type="password" class="ipt ipt-account" maxlength="20" v-model="password" placeholder="密码"/>
+            </div>
+          </div>
+          <div class="cells login_box" v-show="!isActive">
+              <div class="cell relative">
+                <span class="icon icon-account"></span>
+                <input type="text" class="ipt ipt-account" maxlength="20" v-model="account" placeholder="手机号"/>
+                <div class="send_code" :class="{'active':!isDim}" @click="opa8()">
+                       <span v-show="isDim">发送验证码</span>
+                       <span v-show="!isDim">已发送</span> 
+                </div>
+              </div>
+              <div class="cell">
+                <span class="icon icon-pwd"></span>
+                <input type="password" class="ipt ipt-account" maxlength="20" v-model="password" placeholder="验证码"/>
+              </div>
+          </div>
+          <div class="cells">
+            <div v-show="errorMsg" class="error">{{errorMsg}}</div>
+          </div>
+          <div class="cells">
+            <button type="button" class="btn btn-login" @click="login">登录</button>
+            <button type="button" class="btn-regist" @click="regist">注册账号</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 如果需要真机调试，可以修改此行 -->
+    <!-- // <script src="http://192.168.1.104:2002/target/target-script-min.js#anonymous"></script> -->
+    <script src="dist/js/login.js"></script>
+    <script>
+         
+    </script>
+  </body>
+</html> 
